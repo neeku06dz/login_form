@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Ubuntu:wght@300;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+body{
+    background-image: url("img.png");
+}
+.container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: aqua; */
+}
+.loginform{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(0,0,0,0.7);
+    flex-direction: column;
+    padding: 3rem 4rem;
+    position: absolute;
+}
+.loginform h1{
+    font-size: 3rem;
+    text-transform: capitalize;
+    color: #fff;
+    margin-bottom: 3.7rem;
+    justify-content: center;
+    }
+.userid,.password{
+    display: flex;
+    flex-direction: column;
+}
+.userid label,.password label{
+    font-size: 1.2rem;
+    text-transform: capitalize;
+    color:  gray;
+    font-weight: 100;
+    margin-bottom: 1rem;
+    position: absolute;
+    transform: translatex(10%);
+}
+.userid input,.password input{
+    width: 100%;
+    color: #fff;
+    border: transparent;
+    border-bottom: 2px solid #fff;
+    background-color: transparent;
+    border-radius: 2px;
+    font-size: 1.2rem;
+    outline: none;
+    letter-spacing: 1px;
+    position: relative;
+    cursor: pointer;
+}
+.login{
+    width: 100%;
+    padding: 0.7rem 1.7rem;
+    border: solid green;
+    border-radius: 0.7rem;
+    background-color: transparent;
+    color: #fff;
+    font-size: 1.2rem;
+    text-decoration: underline;
+    cursor: pointer;
+    margin-bottom: 1rem;
+}
+.login:hover{
+    background-color: green;
+    transition: all 0.3s ease-in-out;
+}
+.userid input:focus ~ label,.userid input:valid ~ label{
+    transform: translatey(-120%);
+    font-size: 1rem;
+    color: #fff;
+    font-weight: 300;
+}
+.password input:focus ~ label,.password input:valid ~ label
+{
+    transform: translatey(-120%);
+    font-size: 1rem;
+    color: #fff;
+    font-weight: 300;
+}
+.loginform{
+    border-radius: 1rem;
+    border: 0.3rem solid;
+    animation-name: colorChange;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+.remember_forgetPassword{
+    display: flex;
+    gap: 2rem;
+    color: #fff;
+    margin-bottom: 2rem;
+}
+.checkbox{
+    display: flex;
+    gap: 0.5rem;gap: 1rem
+}
+.checkbox input{
+    outline: none;
+}
+
+.userid input{
+    margin-bottom:3.5rem;
+}
+.password input{
+    margin-bottom: 1rem;
+}
+.signup{
+    display: flex;
+    color: #fff;
+    gap: 1rem;
+}
+
+@keyframes colorChange {
+
+    0% {
+        border-color: #291232;
+    }
+
+    10% {
+        border-color: #F63B17;
+    }
+
+    20% {
+        border-color: #4B1A34;
+    }
+
+    30% {
+
+            border-color:#D4320C;
+    }
+
+    40% {
+        border-color: #000311;
+    }
+
+    50% {
+        border-color: #40003E;
+    }
+
+    60% {
+        border-color: #D83B18;
+    }
+
+    70% {
+        border-color: #010411;
+    }
+
+    80% {
+        border-color: #3D1426;
+    }
+
+    90% {
+        border-color: #3F1A2C;
+    }
+
+    100% {
+        border-color: #01030F;
+    }
+}
